@@ -93,11 +93,12 @@ sudo apt install intelmq
 
 - Instalamos la api y el manager:
 
-![5](https://user-images.githubusercontent.com/87453279/132969380-ec79d6ec-7c59-457c-b4af-03c2e805bff3.png)
-
 ```
 sudo apt install intelmq-manager
 ```
+
+![5](https://user-images.githubusercontent.com/87453279/132969380-ec79d6ec-7c59-457c-b4af-03c2e805bff3.png)
+
 
 - Creamos un usuario para poder acceder a la interfaz de web:
 
