@@ -88,6 +88,9 @@ sudo apt update
 sudo apt install intelmq
 ```
 
+![4](https://user-images.githubusercontent.com/87453279/132969314-bc2ecf87-6b1f-468d-939a-e509f18edde9.png)
+
+
 - Instalamos la api y el manager:
 
 ```
