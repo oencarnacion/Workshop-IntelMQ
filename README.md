@@ -105,3 +105,5 @@ intelmq-api-adduser --user intelmq --password intelmq
 ```
 http://<intelmq_ip>/intelmq-manager
 ```
+
+![3](https://user-images.githubusercontent.com/87453279/132968224-571bdd4d-6831-4678-b554-fb7ad114b5b6.png)
