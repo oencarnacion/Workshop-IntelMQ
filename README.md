@@ -20,7 +20,12 @@
 </p>
 
 
-Acerca de 
+
+
+----
+### IntelMQ Overview!
+
+
 IntelMQ es una solución para equipos de seguridad de TI (CERT y CSIRT, departamentos de abuso de SOC, etc.) para recopilar y procesar fuentes de seguridad (como archivos de registro) mediante un protocolo de cola de mensajes. Es una iniciativa impulsada por la comunidad llamada IHAP (Proyecto de automatización de manejo de incidentes) que fue diseñada conceptualmente por los CERT / CSIRT europeos durante varios eventos de InfoSec. Su objetivo principal es brindar a los respondedores de incidentes una manera fácil de recopilar y procesar inteligencia sobre amenazas, mejorando así los procesos de manejo de incidentes de los CERT.
 
 IntelMQ y la cola de mensajería (corredor) 
@@ -30,6 +35,12 @@ Las siguientes estimaciones asumen que Redis es un agente de mensajería, que es
 
 Como Redis almacena todos los datos en la memoria, los datos que se procesan en cualquier momento deben caber allí, incluidos los gastos generales. Tenga en cuenta que IntelMQ no almacena ni almacena en caché ningún dato de entrada. Por lo tanto, estas estimaciones solo se refieren al paso de procesamiento, no al almacenamiento.
 
+---
+
+----
+### IntelMQ Requisitos de Hardware!
+
+
 Para un sistema mínimo, estos requisitos son suficientes:
 
 4 GB de RAM
@@ -37,6 +48,8 @@ Para un sistema mínimo, estos requisitos son suficientes:
 2 CPU
 
 Tamaño de disco de 10 GB
+
+![](https://user-images.githubusercontent.com/87453279/132967583-bc9cc7ad-5ecd-42e5-bbc3-cfc45bcbf3d0.png)
 
 Dependiendo de la entrada de datos, necesitará la vigésima parte del tamaño de los datos de entrada como memoria para el procesamiento.
 
@@ -53,6 +66,9 @@ Para la experimentación, utilizamos varios informes de Shadowserver Poodle con 
 Los números anteriores dan como resultado un factor de 14 para el tamaño de los datos de entrada frente a la memoria requerida por Redis. Suponiendo algo de sobrecarga y memoria para los procesos de los bots, un factor de 20 parece sensato.
 
 Para reducir la cantidad de memoria y el tamaño del disco necesarios, puede eliminar opcionalmente el campo de datos sin procesar ; consulte Eliminar datos sin procesar para obtener un mayor rendimiento y menos uso de espacio en las Preguntas frecuentes.
+
+-----
+
 
 
 Para xUbuntu 20.04, ejecute lo siguiente:
