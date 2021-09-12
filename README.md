@@ -35,7 +35,6 @@ Las siguientes estimaciones asumen que Redis es un agente de mensajería, que es
 
 Como Redis almacena todos los datos en la memoria, los datos que se procesan en cualquier momento deben caber allí, incluidos los gastos generales. Tenga en cuenta que IntelMQ no almacena ni almacena en caché ningún dato de entrada. Por lo tanto, estas estimaciones solo se refieren al paso de procesamiento, no al almacenamiento.
 
----
 
 ----
 ### IntelMQ Requisitos de Hardware!
@@ -74,6 +73,10 @@ Para reducir la cantidad de memoria y el tamaño del disco necesarios, puede eli
 Para xUbuntu 20.04, ejecute lo siguiente:
 Tenga en cuenta que el propietario de la clave puede distribuir actualizaciones, paquetes y repositorios en los que su sistema confiará.
 
+![2](https://user-images.githubusercontent.com/87453279/132967937-83407edd-626a-46fa-b93b-558d1375c093.png)
+
+
+
 ```
 echo 'deb http://download.opensuse.org/repositories/home:/sebix:/intelmq/xUbuntu_20.04/ /' | sudo tee /etc/apt/sources.list.d/home:sebix:intelmq.list
 curl -fsSL https://download.opensuse.org/repositories/home:sebix:intelmq/xUbuntu_20.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_sebix_intelmq.gpg > /dev/null
@@ -84,11 +87,20 @@ sudo apt update
 ```
 sudo apt install intelmq
 ```
+
+- Instalamos la api y el manager:
+
 ```
 sudo apt install intelmq-manager
 ```
 
+- Creamos un usuario para poder acceder a la interfaz de web:
+
+```
 intelmq-api-adduser --user intelmq --password intelmq
+```
+
+- Ahora puede acceder a su panel de control desde la dirección IP que creó:
 
 ```
 http://<intelmq_ip>/intelmq-manager
