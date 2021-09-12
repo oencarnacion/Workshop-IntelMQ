@@ -105,10 +105,18 @@ sudo apt install intelmq-manager
 intelmq-api-adduser --user intelmq --password intelmq
 ```
 
-- Ahora puede acceder a su panel de control desde la dirección IP que creó:
+- Ahora podemos acceder al panel de control de IntelMQ desde la dirección IP que creó:
 
 ```
 http://<intelmq_ip>/intelmq-manager
 ```
 
 ![3](https://user-images.githubusercontent.com/87453279/132968224-571bdd4d-6831-4678-b554-fb7ad114b5b6.png)
+
+
+----
+### Información adicional
+
+Nota, algunos bots pueden tener dependencias adicionales que se mencionan en su propia documentación ).
+
+
