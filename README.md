@@ -68,6 +68,9 @@ sudo apt update
 ```
 sudo apt install intelmq
 ```
+```
+sudo apt install intelmq-manager
+```
 
 intelmq-api-adduser --user intelmq --password intelmq
 
