@@ -119,4 +119,11 @@ http://<intelmq_ip>/intelmq-manager
 
 Nota, algunos bots pueden tener dependencias adicionales que se mencionan en su propia documentación ).
 
+----
+### Referencias:
 
+https://intelmq.readthedocs.io/en/maintenance/
+
+https://software.opensuse.org/download.html?project=home:sebix:intelmq&package=intelmq
+
+https://intelmq.readthedocs.io/en/maintenance/user/introduction.html
